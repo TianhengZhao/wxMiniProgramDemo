@@ -1,0 +1,94 @@
+<header></header>
+
+
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgb(255, 255, 255)" autoplay interval="3000"> 
+    <swiper-item><image src="/images/banner_saye.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/banner_renshe.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/banner_shuishui.jpg"></image></swiper-item>
+  </swiper>
+</view>
+
+
+<scroll-view class="option" scroll-x> <!--内容用flex布局/inline-block-->
+  <view class="opCon">
+    <navigator class="opNav" url="/pages/navi/navi">
+      <image src="/images/icon/fenlei.png"></image>
+      <view class="txt">分类</view>
+    </navigator>
+    <navigator class="opNav" url="/pages/navi/navi">
+      <image src="/images/icon/faxian.png"></image>
+      <view class="txt">发现</view>
+    </navigator>
+    <navigator class="opNav" url="/pages/navi/navi">
+      <image src="/images/icon/liwu.png"></image>
+      <view class="txt">排行</view>
+    </navigator>
+    <navigator class="opNav" url="/pages/navi/navi">
+      <image src="/images/icon/renwu.png"></image>
+      <view class="txt">完结</view>
+    </navigator>
+    <navigator class="opNav" url="/pages/navi/navi">
+      <image src="/images/icon/fukuan.png"></image>
+      <view class="txt">已购</view>
+    </navigator>
+  </view>
+</scroll-view>
+
+
+<view class="container classify">
+  <pubtitle myDes="小说分类" myUrl="/pages/classify/classify"></pubtitle> <!--自定义组件传递属性-->
+  <view class="claMain">
+    <navigator class="box" url="/pages/navi/navi">
+      <image class="pic" src="/images/yanqing.jpg"></image>
+      <view class="layer">
+        <view class="claTitle">分类1</view>
+        <view class="line"></view>
+        <view class="claDes">description</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/navi/navi">
+      <image class="pic" src="/images/yanqing.jpg"></image>
+      <view class="layer">
+        <view class="claTitle">分类2</view>
+        <view class="line"></view>
+        <view class="claDes">description</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/navi/navi">
+      <image class="pic" src="/images/yanqing.jpg"></image>
+      <view class="layer">
+        <view class="claTitle">分类3</view>
+        <view class="line"></view>
+        <view class="claDes">description</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/navi/navi">
+      <image class="pic" src="/images/yanqing.jpg"></image>
+      <view class="layer">
+        <view class="claTitle">分类4</view>
+        <view class="line"></view>
+        <view class="claDes">description</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+
+<view class="recomm container">
+  <pubtitle myDes="小说推荐" myUrl="/pages/found/found"></pubtitle>
+  <view class="recMain">
+    <navigator class="recItem" wx:for="{{dataList}}" url="/pages/navi/navi" wx:key="index">
+      <view class="pic">
+        <image src="{{item.picUrl}}"></image>
+      </view>
+      <view class="txt">
+        <view class="name">{{item.name}}</view>
+        <view class="author">作者：{{item.author}}<text space="ensp">  -  </text>时间：{{item.time}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+
+<footer></footer>

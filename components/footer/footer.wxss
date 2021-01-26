@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+  height: 90rpx;
+  background: #f0f3f8;
+  margin-bottom: 20rpx;
+}
+.footer .txt {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 90rpx;
+}

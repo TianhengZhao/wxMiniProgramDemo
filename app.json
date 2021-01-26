@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/navi/navi",
+    "pages/classify/classify",
+    "pages/found/found"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "横 · 小说阅读",
+    "navigationBarTextStyle":"white"
+  },
+  "usingComponents": {
+    "header": "/components/header/header",
+    "footer": "/components/footer/footer",
+    "pubtitle": "/components/pubTitle/pubTitle"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#515151",
+    "list": [
+      {
+        "pagePath": "pages/index/index",  
+        "text": "首页",
+        "iconPath": "/images/icon/shouye_g.png",
+        "selectedIconPath": "/images/icon/shouye.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "/images/icon/fenlei_g.png",
+        "selectedIconPath": "/images/icon/fenlei.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "/images/icon/faxian_g.png",
+        "selectedIconPath": "/images/icon/faxian.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

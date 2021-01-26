@@ -1,0 +1,6 @@
+/* pages/navi/navi.wxss */
+.content {
+  height: 1250rpx;
+  text-align: center;
+  line-height: 1250rpx;
+}

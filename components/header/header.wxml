@@ -1,0 +1,11 @@
+<view class="header">
+  <view class="container handleCon">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+      <image src="/images/logo.jpg" mode="heightFix"></image>
+    </navigator>
+    <view class="service">
+      <image src="/images/icon/kefu.png" mode="heightFix"></image>
+      <button class="btn" open-type="contact"></button>
+    </view>
+  </view>
+</view>
